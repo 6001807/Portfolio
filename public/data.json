@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Freepack Askfree",
+        "desc": "Making improvements to an existing system. Added new call in sick and archive worker functionailty.",
+        "year": 2023,
+        "id": 1,
+        "img": "img/askfree.png",
+        "language1": "img/PHP-icon.png",
+        "language2": "img/MySQL-icon.png",
+        "language3": "img/JS-icon.png",
+        "offset": 0      
+    },
+    {
+        "title": "Portfolio Website",
+        "desc": "A website to show what i have made and learnt so far.",
+        "year": 2023,
+        "id": 2,
+        "img": "img/portfolio.png",
+        "language1": "img/React-icon.png",
+        "language2": "img/JS-icon.png",
+        "offset": 0.74      
+    },
+    {
+        "title": "Animap",
+        "desc": "A website to view animals that live in a country you click on",
+        "year": 2024,
+        "id": 3,
+        "img": "img/animap.png",
+        "language1": "img/JS-icon.png",
+        "offset": 1   
+    }
+]
