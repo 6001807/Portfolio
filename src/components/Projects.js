@@ -5,16 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Projects = forwardRef((props, ref) => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    fetch("../data.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setProjects(data);
-      });
-  }, []);
-
   return (
     <div ref={ref} className="projects-content">
       <div className="project-title-div">
@@ -25,21 +15,43 @@ const Projects = forwardRef((props, ref) => {
           <ParallaxLayer sticky={{ start: 0, end: 2 }} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
             <Slide />
           </ParallaxLayer>
-
-        {projects.map((project) => (
-          <ParallaxLayer key={project.id} offset={project.offset} speed={0.5} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+      
+          <ParallaxLayer offset={0} speed={0.5} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
             <div className="item">
-              <h1>{project.title}</h1>
-              <h2 id="desc-project">{project.desc}</h2>
-              <h3>{project.year}</h3>
+              <h1>Freepack Askfree</h1>
+              <h2 id="desc-project">Making improvements to an existing system. Added new call in sick and archive worker functionailty.</h2>
+              <h3>2023</h3>
               <div className="lang">
-                <img className="item-lang" src={project.language1} alt=""></img>
-                <img className="item-lang" src={project.language2}></img>
-                <img className="item-lang" src={project.language3}></img>
+                <img className="item-lang" src="img/PHP-icon.png" alt=""></img>
+                <img className="item-lang" src="img/JS-icon.png" alt=""></img>
+                <img className="item-lang" src="img/MySQL-icon.png" alt=""></img>
               </div>
             </div>
           </ParallaxLayer>
-        ))}
+
+          <ParallaxLayer offset={0.74} speed={0.5} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+            <div className="item">
+              <h1>Portfolio</h1>
+              <h2 id="desc-project">A website to show what i have made and learnt so far.</h2>
+              <h3>2023</h3>
+              <div className="lang">
+                <img className="item-lang" src="img/JS-icon.png" alt=""></img>
+                <img className="item-lang" src="img/React-icon.png" alt=""></img>
+              </div>
+            </div>
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={1} speed={0.5} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+            <div className="item">
+              <h1>Animap</h1>
+              <h2 id="desc-project">A website to view animals that live in a country you click on.</h2>
+              <h3>2024</h3>
+              <div className="lang">
+                <img className="item-lang" src="img/JS-icon.png" alt=""></img>
+              </div>
+            </div>
+          </ParallaxLayer>
+  
         </Parallax>
       </div>
     </div>
