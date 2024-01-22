@@ -2,6 +2,10 @@ import React, { useState, useEffect, useRef, forwardRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Slide from "./Slide";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import sql from '../img/MySQL-icon.png';
+import react from '../img/React-icon.png';
+import js from '../img/JS-icon.png';
+import php from '../img/PHP-icon.png';
 
 
 const Projects = forwardRef((props, ref) => {
@@ -22,9 +26,9 @@ const Projects = forwardRef((props, ref) => {
               <h2 id="desc-project">Making improvements to an existing system. Added new call in sick and archive worker functionailty.</h2>
               <h3>2023</h3>
               <div className="lang">
-                <img className="item-lang" src="img/PHP-icon.png" alt=""></img>
-                <img className="item-lang" src="img/JS-icon.png" alt=""></img>
-                <img className="item-lang" src="img/MySQL-icon.png" alt=""></img>
+                <img className="item-lang" src={php} alt=""></img>
+                <img className="item-lang" src={js} alt=""></img>
+                <img className="item-lang" src={sql} alt=""></img>
               </div>
             </div>
           </ParallaxLayer>
@@ -35,8 +39,8 @@ const Projects = forwardRef((props, ref) => {
               <h2 id="desc-project">A website to show what i have made and learnt so far.</h2>
               <h3>2023</h3>
               <div className="lang">
-                <img className="item-lang" src="img/JS-icon.png" alt=""></img>
-                <img className="item-lang" src="img/React-icon.png" alt=""></img>
+                <img className="item-lang" src={js} alt=""></img>
+                <img className="item-lang" src={react} alt=""></img>
               </div>
             </div>
           </ParallaxLayer>
@@ -47,7 +51,7 @@ const Projects = forwardRef((props, ref) => {
               <h2 id="desc-project">A website to view animals that live in a country you click on.</h2>
               <h3>2024</h3>
               <div className="lang">
-                <img className="item-lang" src="img/JS-icon.png" alt=""></img>
+                <img className="item-lang" src={js} alt=""></img>
               </div>
             </div>
           </ParallaxLayer>

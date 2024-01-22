@@ -1,4 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
+import port from '../img/portfolio.png';
+import animap from '../img/animap.png';
+import askfree from '../img/askfree.png';
 
 const Slide = () => {
     return (
@@ -6,21 +9,21 @@ const Slide = () => {
           <Carousel.Item interval={2500}>
             <img
               className="slide"
-              src="img/askfree.png"
+              src={askfree}
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item interval={2500}>
             <img
               className="slide"
-              src="img/portfolio.PNG"
+              src={port}
               alt="Second slide"
             />
           </Carousel.Item>
           <Carousel.Item interval={2500}>
             <img
               className="slide"
-              src="img/animap.png"
+              src={animap}
               alt="Third slide"
             />
           </Carousel.Item>

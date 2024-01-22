@@ -18,7 +18,7 @@ const Experience = forwardRef((propTypes, ref) => {
             <div className="buttons">
                 <button onClick={() => {
                     handleClick(Experienceme)}
-                } className="infobuttons">Wie ben ik?</button>
+                } className="infobuttons" id="test">Wie ben ik?</button>
                 <button onClick={() => {
                     handleClick(Experienceinleiding)}
                 } className="infobuttons">Inleiding</button>
